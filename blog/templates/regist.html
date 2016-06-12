@@ -1,0 +1,45 @@
+<html>
+<head>
+	<link rel="stylesheet" href="/static/css/bootstrap.min.css"></link>
+</head>
+<body style="background:red;">
+<div>
+	{% if errors %}
+		<p>{{ errors }}</p>
+	{% endif %}
+</div>
+<center>
+<form action='' method='post'>
+	<div class='col-md-9'>
+		<table>
+			<tr>
+				<td>登录名：</td>
+				<td>{{ form.name }}</td>
+			</tr>
+			<tr>
+				<td>密码：</td>
+				<td>{{ form.password }}</td>
+			</tr>
+			<tr>
+				<td>qq：</td>
+				<td>{{ form.qq }}</td>
+			</tr>
+			<tr>
+				<td>手机：</td>
+				<td>{{ form.phone }}</td>
+			</tr>
+			<tr>
+				<td>Email：</td>
+				<td>{{ form.email }}</td>
+			</tr>
+			<tr>
+				<td colspan="2" style="text-align:center;">
+					<input type='submit' value='注册'>
+				</td>
+			</tr>
+		</table>
+	</div>
+</form>
+</center>
+</body>
+</html>
